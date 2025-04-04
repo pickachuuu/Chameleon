@@ -17,7 +17,6 @@ export default function Home() {
         fill={true}
         priority
       />
-      <div className="absolute inset-0 bg-black/50" />
       <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.6 }}
