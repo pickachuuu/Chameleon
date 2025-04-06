@@ -43,8 +43,11 @@ const handler = NextAuth({
         if (!user) {
           return null
         }
+        
+        console.log(`this is the inputted password ${credentials.password}`)
 
-        const isPasswordValid = await compare(credentials.password, user.password)
+        const isPasswordValid = credentials.password === user.password 
+
         
         if (!isPasswordValid) {
           return null
