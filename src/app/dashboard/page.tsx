@@ -31,8 +31,8 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-4">
-      <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl shadow-lg max-w-md w-full">
+    <div className="flex flex-col items-center justify-center min-h-screen p-12 w-full">
+      <div className="bg-white p-8 rounded-xl shadow-lg max-w-[600px] w-full">
         <h1 className="text-2xl font-bold mb-6 text-center">Dashboard</h1>
         
         {session?.user && (
